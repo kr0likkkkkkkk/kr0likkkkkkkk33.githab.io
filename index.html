@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+</html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>задание 2</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <img src="https://i.pinimg.com/736x/be/b3/f5/beb3f58d75094ea102fd5317d8a8667a.jpg" alt="" id="logo"
+        class="rounded-image">
+      <h1 class="name">Сайт для котиков</h1>
+      <nav>
+        <a class="nav-link" href="#cod1">Список гиперссылок</a>
+        <a class="nav-link" href="#cod2">Таблица</a>
+        <a class="nav-link" href="#cod3">Форма</a>
+      </nav>
+    </header>
+    <main>
+      <section id="cod1">
+        <ol>
+          <h3> Список гиперссылок</h3>
+          <li><a href="https://www.kubsu.ru/"
+              title="Официальный сайт Кубанского государственного университета">КубГУ</a></li>
+          <li><a href="http://www.kubsu.ru/" title="Официальный сайт Кубанского государственного университета">КубГУ</a>
+          </li>
+          <li><img src="https://i.pinimg.com/originals/e1/e1/71/e1e171cf8abc233d64570f286e27faaf.jpg"
+              alt="картинка котик" width="300">
+          <li><a href="about.html"> Внутренняя страница </a></li>
+          <li><a href="#cats">Котики</a></li>
+          <li><a href="https://www.kubsu.ru/ru/search/content?keys=абитуриенты">ссылка с 3 параметрами</a></li>
+          <li><a href="https://kubsu.ru/?ysclid=mfkyokftp2655745116a">ссылка с id</a></li>
+          <li><a href="./code1.html"> Ссылка на страницу в текущем каталоге</a></li>
+          <li><a href="./about.html"> Ссылка на страницу в каталоге about</a></li>
+          <li><a href="../code2.html"> Ссылка на страницу в каталоге уровнем выше</a></li>
+          <li><a href="../../code3.html"> Ссылка на страницу в каталоге двумя уровнями выше</a></li>
+          <li><a href="#cats">Котики</a> оказывают положительное влияние на жизнь человека. В психологическом плане они
+            эффективно снижают стресс и чувство одиночества — регулярное поглаживание питомца нормализует уровень
+            кортизола и стимулирует выработку «гормонов счастья». Их мурлыкание, работающее в диапазоне 20–140 Гц,
+            обладает терапевтическим эффектом: ускоряет восстановление тканей и облегчает хронические боли.
+          <li><a href="https://www.kubsu.ru/lib/images/Group3288.png">Ссылка на фрагмент стороннего сайта</a></li>
+          <li>Ссылки из прямоугольных и круглых областей картинки</li>
+          <img src="aaa.png" usemap="#element">
+          <map name="element">
+            <area shape="rect" coords="0,0,251,274" href="http://www.kubsu.ru">
+            <area shape="circle" coords="400,64,64" href="http://www.kubsu.ru">
+          </map>
+          <li><a href=""> Ссылка с пустым href</a></li>
+          <li><a title="............"> Ссылка без href</a></li>
+          <li><a href="index.html" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам</a></li>
+          <li>
+            <noindex><a href="index.html"> Ссылка, запрещенная для индексации поисковиками</a></noindex>
+          </li>
+          <li>
+            <ol>
+              Нумерованный список ссылок
+              <li><a href="https://www.kubsu.ru" title="Первая">ссылка</a></li>
+              <li><a href="https://www.kubsu.ru" title="Вторая">ссылка</a></li>
+              <li><a href="https://www.kubsu.ru" title="Третья">ссылка</a></li>
+            </ol>
+          </li>
+        </ol>
+      </section>
+
+      <section id="cod2">
+        <ol>
+          <h3>Таблица</h3>
+          <table class="tablic">
+            <tr class=chet>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+            </tr>
+            <tr class=nechet>
+              <td>1.1</td>
+              <td>2.1</td>
+              <td>3.1</td>
+              <td>4.1</td>
+            </tr>
+            <tr class=chet>
+              <td>1.2</td>
+              <td rowspan="2">2.2</td>
+              <td>3.2</td>
+              <td>4.2</td>
+            </tr>
+            <tr class=nechet>
+              <td>1.3</td>
+              <td colspan="2">2.3</td>
+            </tr>
+            <tr class=chet>
+              <td>1.4</td>
+              <td>2.4</td>
+              <td>3.4</td>
+              <td>4.4</td>
+            </tr>
+            <tr class=nechet>
+              <td>1.5</td>
+              <td>2.5</td>
+              <td>3.5</td>
+              <td>4.5</td>
+            </tr>
+          </table>
+        </ol>
+      </section>
+
+      <section id="cod3">
+        <form action="" method="POST">
+          <h3>Форма</h3>
+          <label>
+            Ваше ФИО
+            <br><input name="field-name" placeholder="Введите ФИО"></br>
+          </label>
+          <label>
+            Телефон
+            <br><input name="field-tel" placeholder="Введите номер телефона" type="tel"></br>
+          </label>
+          <label>
+            E-mail
+            <br><input name="field-email" placeholder="Введите email" type="email"></br>
+          </label>
+          <label>
+            Дата рождения
+            <br><input name="field-date" placeholder="Введите дату рождения" type="date"></br>
+          </label>
+
+          <br />
+          Пол
+          <label><input type="radio" name="radio-group-1" value="Значение1" />Муж</label>
+          <label><input type="radio" name="radio-group-1" value="Значение2" />Жен</label>
+          <br />
+
+          <label>
+            Любимый язык программирования:
+            <br>
+            <select name="listbox" multiple="multiple">
+              <option value="Значение1" selected="selected">Pascal</option>
+              <option value="Значение2" selected="selected">C</option>
+              <option value="Значение3" selected="selected">C++</option>
+              <option value="Значение4" selected="selected">JavaScript</option>
+              <option value="Значение5" selected="selected">PHP</option>
+              <option value="Значение6" selected="selected">Python</option>
+              <option value="Значение7" selected="selected">Java</option>
+              <option value="Значение8" selected="selected">Haskel</option>
+              <option value="Значение9" selected="selected">Clojure</option>
+              <option value="Значение10" selected="selected">Prolog</option>
+              <option value="Значение11" selected="selected">Scala</option>
+            </select>
+            <br />
+          </label>
+
+          <label>
+            Биография:
+            <br>
+            <textarea name="field-name-2">Расскажите вашу историю</textarea>
+            </br>
+          </label>
+
+          <label>
+            <input type="checkbox" checked="checked" name="check-1">
+            С контрактом ознакомлен (а)
+          </label>
+          <input type="submit" value="Сохранить" />
+        </form>
+
+        <section id="cats">
+          <h2>
+            Милые котики
+          </h2>
+          <img src="https://i.pinimg.com/736x/76/6a/4f/766a4f54db2465903e6d719052b47fa2.jpg" alt="котик1" width="450">
+          <img src="https://i.pinimg.com/736x/0b/95/78/0b9578233e45f403db499f11ab6357af.jpg" alt="котик2" width="450">
+          <img src="https://i.pinimg.com/originals/76/a0/06/76a0065375966075c31457a63a05b7b0.jpg" alt="котик3"
+            width="450">
+          <img
+            src="https://kto-chto-gde.ru/wp-content/uploads/2022/05/10-vydayushhixsya-talantov-v-mire-zhivotnyx-kotorye-tyanut-na-oskar-1.jpg"
+            alt="котик4" width="450">
+        </section>
+      </section>
+
+      <footer>
+        (с) Шкурко Валерия
+      </footer>
+    </main>
+</body>
+</div>
